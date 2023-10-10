@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: grid;
+  grid-template-areas:
+    "top-nav-bar"
+    "content"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+.top-nav {
+  grid-area: top-nav-bar;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+}
+.navLogo img {
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+}
+.nav-menue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-menue a {
+  color: #002845;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: family_medium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Nav Section Ends here*/
+
+/*Heor section starts here*/
+.content {
+  grid-area: content;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.hero-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  margin-left: 150px;
+  color: #002845;
+  font-family: family_black, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hero-section-content h1 {
+  font-size: 3.2rem;
+  font-weight: 1000;
+}
+.hero-section-content p {
+  font-size: 1.6rem;
+  text-align: left;
+}
+.hero-section-content button {
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  font-size: medium;
+  border-radius: 7px;
+  height: 60px;
+  width: 150px;
+  padding: 0px 30px;
+  background-color: #004484;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.hero-section-content button:hover {
+  background-color: rgb(34, 79, 94);
+}
+/* Hero section ends here*/
+
+/* Form section start*/
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #d4bdbd;
+  place-items: center;
+  gap: 20px;
+  height: auto;
+  padding: 20px;
+}
+
+p {
+  font-weight: bold;
+}
+.formheading1 h2 {
+  margin-left: 20px;
+}
+.formsection form {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 10px;
+  height: auto;
+}
+input[type="text"]:focus {
+  background-color: lightyellow;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 1px 1px #efc2c2;
+}
+.message {
+  grid-column: 1;
+  grid-column: span 2;
+}
+textarea {
+  height: 200px;
+}
+
+.pet {
+  grid-column: 1;
+}
+.food {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+.food label {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+  margin-right: 10px;
+}
+
+.vehicle {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+.vehicle label {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+  margin-right: 10px;
+}
+.send {
+  grid-column: 1;
+}
+.send button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 100px;
+  margin-top: 10px;
+}
+.send button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+/* Form section ends here*/
+
+/*Footer section starts here*/
+
+.footer {
+  grid-area: footer;
+  background-color: #002845;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: family_medium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.footer-logo img {
+  height: 60px;
+  width: 80px;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 150px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-content h3 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+.footer-content a {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+.footercontent {
+  display: flex;
+  flex-direction: column;
+}
