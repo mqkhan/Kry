@@ -124,7 +124,7 @@ p {
   height: auto;
 }
 input[type="text"]:focus {
-  background-color: lightyellow;
+  background-color: rgb(243, 243, 212);
 }
 
 input,
