@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
@@ -9,7 +9,7 @@
     "content"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto 400px;
 }
 .top-nav {
   grid-area: top-nav-bar;
@@ -33,6 +33,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .nav-menue a {
   color: #002845;
@@ -40,8 +42,10 @@
   font-size: 1rem;
   font-weight: bold;
   font-family: family_medium, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  cursor: pointer;
   margin: 10px;
+}
+.nav-menue .fa-solid {
+  display: none;
 }
 
 /* Nav Section Ends here*/
@@ -252,4 +256,112 @@ input[type="checkbox"] {
 .footercontent {
   display: flex;
   flex-direction: column;
+}
+/*media query starts here*/
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+  }
+
+  .navLogo img {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .hamburgar .fa-solid {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d47171;
+  }
+  .hero-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: #002845;
+    margin-bottom: 10px;
+    font-family: family_black, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .hero-section-content h1 {
+    font-size: 1.5rem;
+    font-weight: 1000;
+  }
+  .hero-section-content p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .hero-section-image {
+    display: flex;
+    flex-direction: column;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .formsection form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #002845;
+    width: 100vw;
+  }
+  .footer-logo img {
+    height: 60px;
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .footercontent {
+    display: flex;
+    flex-direction: column;
+  }
 }

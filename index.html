@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8715e485ae.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Kry.se</title>
   </head>
   <body>
@@ -14,12 +18,17 @@
           <img src="images/logo.png" alt="" />
         </div>
         <div class="nav-menue">
-          <a href="">Sök vård digitalt</a>
-          <a href="">Förnya recept</a>
-          <a href="">Tester & vaccination</a>
-          <a href="">Vårdcentraler</a>
-          <a href="">Fakta & råd</a>
-          <a href="">Din hälsa</a>
+          <span class="navbar">
+            <a href="">Sök vård digitalt</a>
+            <a href="">Förnya recept</a>
+            <a href="">Tester & vaccination</a>
+            <a href="">Vårdcentraler</a>
+            <a href="">Fakta & råd</a>
+            <a href="">Din hälsa</a>
+          </span>
+          <span class="hamburgar">
+            <i class="fa-solid fa-bars"></i>
+          </span>
         </div>
       </div>
       <!-- Nav section Ends here -->
@@ -27,21 +36,13 @@
       <div class="content">
         <div class="hero-section">
           <div class="hero-section-content">
-            <div>
-              <h1>
-                Vi tar hand om<br />
-                dig om 2 <br />minuter
-              </h1>
-            </div>
-            <div>
-              <p>Chatt, videomöten och vårdcentraler</p>
-            </div>
-            <div>
-              <p>Läkare, psykologer, sjuksköterskor och fysioterapeuter</p>
-            </div>
-            <div>
-              <p>Öppet dygnet runt i appen</p>
-            </div>
+            <h1>
+              Vi tar hand om<br />
+              dig om 2 <br />minuter
+            </h1>
+            <p>Chatt, videomöten och vårdcentraler</p>
+            <p>Läkare, psykologer, sjuksköterskor och fysioterapeuter</p>
+            <p>Öppet dygnet runt i appen</p>
             <button><a href=""></a>Sök Vård</button>
           </div>
 
@@ -100,7 +101,11 @@
 
               <div class="message">
                 <label for="msg"><p>Message</p></label>
-                <textarea name="message" id="msg"></textarea>
+                <textarea
+                  name="message"
+                  id="msg"
+                  placeholder="Type your message here"
+                ></textarea>
               </div>
 
               <div class="pet">
@@ -171,17 +176,6 @@
               </div>
             </form>
           </div>
-
-          <!-- <div class="forgottpwdHeading">
-            <h2>Glömt Lösenord</h2>
-          </div>
-
-          <div class="glömtPwdSection">
-            <form action="https://httpbin.org/anything">
-              <input type="text" name="email" required />
-              <button type="submit">Submit</button>
-            </form>
-          </div> -->
         </div>
       </div>
       <!-- Content section Ends here -->
