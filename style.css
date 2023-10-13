@@ -51,7 +51,7 @@ body {
 /* Nav Section Ends here*/
 
 /*Heor section starts here*/
-.content {
+.content-section {
   grid-area: content;
   background-color: #ffffff;
   display: flex;
@@ -114,9 +114,7 @@ body {
 p {
   font-weight: bold;
 }
-.formheading1 h2 {
-  margin-left: 20px;
-}
+
 .formsection form {
   display: grid;
   grid-template-columns: 300px 300px;
@@ -135,7 +133,7 @@ select {
   box-sizing: border-box;
   border-radius: 5px;
   border: none;
-  box-shadow: inset 1px 1px #efc2c2;
+  box-shadow: inset 3px 3px #514e4e;
 }
 .message {
   grid-column: 1;
@@ -240,11 +238,10 @@ input[type="checkbox"] {
   width: 80%;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 10px;
 }
 .footer-content h3 {
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .footer-content a {
   font-size: 20px;
@@ -260,24 +257,13 @@ input[type="checkbox"] {
 /*media query starts here*/
 
 @media (max-width: 600px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .top-nav {
     background-color: white;
     color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 100px;
-    width: 100vw;
-    position: fixed;
+    justify-content: end;
+    width: auto;
   }
 
   .navLogo img {
@@ -293,9 +279,10 @@ input[type="checkbox"] {
     margin-right: 50px;
   }
 
-  .content {
+  .content-section {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
 
   .hero-section {
@@ -304,29 +291,37 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     background-color: #d47171;
-    height: 100%;
+    width: auto;
   }
   .hero-section-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: left;
+    align-items: left; */
     color: #002845;
     font-family: family_black, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 5px;
+    width: auto;
   }
 
-  .hero-section-image {
-    /* height: 50%; */
+  .hero-section-image img {
+    width: auto;
+    height: auto;
   }
   .formContainer {
     display: flex;
     flex-direction: column;
+    background-color: #f1f1f1;
+    width: auto;
   }
   .formsection form {
     display: flex;
     flex-direction: column;
+    background-color: wheat;
+    width: 500px;
+    padding: 20px;
     gap: 5px;
+    box-sizing: border-box;
   }
   .footer {
     display: flex;
@@ -334,7 +329,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     background-color: #002845;
-    width: 100vw;
+    width: auto;
     padding: 10px;
   }
   .footer-logo img {
@@ -345,11 +340,10 @@ input[type="checkbox"] {
   .footer-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
   }
   .footercontent {
-    display: flex;
     flex-direction: column;
   }
 }
